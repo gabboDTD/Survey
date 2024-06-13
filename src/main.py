@@ -1,6 +1,8 @@
 import streamlit as st
 from section_2 import display_section_2
 from section_3 import display_section_3
+from section_4 import display_section_4
+
 from utils import multiple_choice_question, radio_button_question, number_input_question, conditional_text_input
 
 # Survey Title and Introduction
@@ -14,11 +16,14 @@ cercando di rilevare quegli elementi utili per l’integrazione e la qualificazi
 # Section 1: Anagrafica (TBD)
 # st.header('1. Anagrafica')
 
-# Display Section 2
+# # Display Section 2
 # display_section_2()
 
+# # Display Section 3
+# display_section_3()
+
 # Display Section 3
-display_section_3()
+display_section_4()
 
 # # Section 3: Infrastruttura ICT
 # st.header('3. Infrastruttura ICT')
