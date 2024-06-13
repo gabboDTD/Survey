@@ -38,8 +38,8 @@ This project is a Streamlit application for conducting the 2024 digitalization s
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/yourusername/my-streamlit-survey.git
-    cd my-streamlit-survey
+    git clone https://github.com/gabboDTD/Survey.git
+    cd Survey/src
     ```
 
 2. **Install dependencies**:
