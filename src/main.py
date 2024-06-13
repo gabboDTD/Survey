@@ -1,5 +1,6 @@
 import streamlit as st
 from section_2 import display_section_2
+from section_3 import display_section_3
 from utils import multiple_choice_question, radio_button_question, number_input_question, conditional_text_input
 
 # Survey Title and Introduction
@@ -11,33 +12,36 @@ cercando di rilevare quegli elementi utili per l’integrazione e la qualificazi
 """)
 
 # Section 1: Anagrafica (TBD)
-st.header('1. Anagrafica')
+# st.header('1. Anagrafica')
 
 # Display Section 2
-display_section_2()
+# display_section_2()
 
-# Section 3: Infrastruttura ICT
-st.header('3. Infrastruttura ICT')
+# Display Section 3
+display_section_3()
 
-# Example Question in Section 3
-st.subheader('3.1 Allo stato attuale nel tuo Comune sono operativi server fisici per la gestione e l’utilizzo di applicazioni e dati?')
-options_3_1 = [
-    'SI esistono server attivi all’interno del Comune per la gestione di applicazioni e dati',
-    'NO non sono più previsti server installati presso il Comune poiché è stata completata la migrazione al cloud',
-    'NO non è più attivo un server per la gestione di applicazioni e dati ma sono attivi alcuni sistemi per la gestione e la protezione della rete e degli accessi',
-    'NO le applicazioni sono state già migrate sul cloud ma il file server con documenti dati immagini ecc. sono archiviati in locale in cartelle condivise.'
-]
-selected_3_1 = radio_button_question('Seleziona un\'opzione:', options_3_1, key='3_1')
+# # Section 3: Infrastruttura ICT
+# st.header('3. Infrastruttura ICT')
 
-# Continue with other questions similarly...
+# # Example Question in Section 3
+# st.subheader('3.1 Allo stato attuale nel tuo Comune sono operativi server fisici per la gestione e l’utilizzo di applicazioni e dati?')
+# options_3_1 = [
+#     'SI esistono server attivi all’interno del Comune per la gestione di applicazioni e dati',
+#     'NO non sono più previsti server installati presso il Comune poiché è stata completata la migrazione al cloud',
+#     'NO non è più attivo un server per la gestione di applicazioni e dati ma sono attivi alcuni sistemi per la gestione e la protezione della rete e degli accessi',
+#     'NO le applicazioni sono state già migrate sul cloud ma il file server con documenti dati immagini ecc. sono archiviati in locale in cartelle condivise.'
+# ]
+# selected_3_1 = radio_button_question('Seleziona un\'opzione:', options_3_1, key='3_1')
 
-# Section 4: Sicurezza
-st.header('4. Sicurezza')
+# # Continue with other questions similarly...
 
-# Example Question in Section 4
-st.subheader('4.1 Come è gestito il backup dei dati e dei sistemi nel tuo Comune?')
-options_4_1 = ['Tramite backup locale', 'Tramite backup in cloud', 'Utilizzando entrambe le modalità: locale e in cloud']
-selected_4_1 = radio_button_question('Seleziona un\'opzione:', options_4_1, key='4_1')
+# # Section 4: Sicurezza
+# st.header('4. Sicurezza')
+
+# # Example Question in Section 4
+# st.subheader('4.1 Come è gestito il backup dei dati e dei sistemi nel tuo Comune?')
+# options_4_1 = ['Tramite backup locale', 'Tramite backup in cloud', 'Utilizzando entrambe le modalità: locale e in cloud']
+# selected_4_1 = radio_button_question('Seleziona un\'opzione:', options_4_1, key='4_1')
 
 # Continue with other questions similarly...
 
@@ -58,4 +62,4 @@ selected_4_1 = radio_button_question('Seleziona un\'opzione:', options_4_1, key=
 
 # Submit button
 if st.button('Submit'):
-    st.write('Thank you for completing the survey!')
+    st.write('Grazie per aver completato la survey!')

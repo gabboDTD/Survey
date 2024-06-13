@@ -59,4 +59,4 @@ This project is a Streamlit application for conducting the 2024 digitalization s
 To run the Streamlit application, use the following command:
 
 ```bash
-streamlit run survey.py
+streamlit run main.py
