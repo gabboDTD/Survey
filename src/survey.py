@@ -240,6 +240,3 @@ selected_4_1 = radio_button_question('Seleziona un\'opzione:', options_4_1, key=
 # Submit button
 if st.button('Submit'):
     st.write('Thank you for completing the survey!')
-
-if __name__ == '__main__':
-    st.run()
