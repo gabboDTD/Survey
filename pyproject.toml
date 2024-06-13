@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "survey"
 version = "0.1.0"
-description = ""
+description = "Survey to map the digitalization of Italian Municipalities"
 authors = ["Gabriele Spina <g.spina@innovazione.gov.it>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.10.8"
+python = ">=3.10.8,<3.12"
 streamlit = "^1.35.0"
 
 
