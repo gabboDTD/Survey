@@ -91,8 +91,111 @@ if num_resources_planned > 0:
         ['Interno all’ente', 'Condiviso con altri Enti', 'Esterno']
     )
 
-# Question 2.5 to 2.14
-# You can similarly add other questions following the same pattern
+# Question 2.5
+st.subheader('2.5 In merito alla figura del responsabile dei sistemi informativi indica la tipologia selezionando una o più opzioni:')
+options_2_5 = [
+    'Interno all’ente',
+    'Condiviso con altri Enti (Unioni, Comunità montane, Convenzioni, Consorzi)',
+    'Altro (specificare)'
+]
+selected_2_5 = multiple_choice_question('Seleziona una o più opzioni:', options_2_5)
+conditional_text_input('Specificare:', 'Altro (specificare)' in selected_2_5)
+
+# Question 2.6
+st.subheader('2.6 In merito alla figura del responsabile dei sistemi informativi indica se è dedicato esclusivamente a quella funzione o svolge anche altre funzioni (non dedicato)')
+options_2_6 = [
+    'Dedicato',
+    'Non dedicato'
+]
+selected_2_6 = radio_button_question('Seleziona un\'opzione:', options_2_6)
+
+# Question 2.7
+st.subheader('2.7 In merito alle competenze del responsabile dei sistemi informativi indica la tipologia selezionando una o più opzioni:')
+options_2_7 = [
+    'esclusivamente amministrativo',
+    'esclusivamente tecnologico',
+    'organizzativo e strategico'
+]
+selected_2_7 = multiple_choice_question('Seleziona una o più opzioni:', options_2_7)
+
+# Question 2.8
+st.subheader('2.8 Il tuo Comune ha nominato come Responsabile per la Transizione Digitale (RTD) una figura:')
+options_2_8 = [
+    'Interna dedicato',
+    'Interna ma che svolge anche il ruolo di Responsabile dell’Information Technology (IT/ITC)',
+    'Interna ma che svolge anche un ruolo di Responsabile apicale di altro servizio',
+    'In condivisione con altri Comuni',
+    'In fase di nomina',
+    'Altro (specificare)'
+]
+selected_2_8 = radio_button_question('Seleziona un\'opzione:', options_2_8)
+conditional_text_input('Specificare:', 'Altro (specificare)' in selected_2_8)
+
+# Question 2.9
+st.subheader('2.9 In merito al Responsabile per la Protezione dati (DPO) il tuo Comune ha nominato:')
+options_2_9 = [
+    'Responsabile per la Protezione dati (DPO) interno',
+    'Responsabile per la Protezione dati (DPO) esterno',
+    'Responsabile per la Protezione dati (DPO) In condivisione con altri Comuni',
+    'Responsabile per la Protezione dati (DPO) in fase di nomina',
+    'Altro (specificare)'
+]
+selected_2_9 = radio_button_question('Seleziona un\'opzione:', options_2_9)
+conditional_text_input('Specificare:', 'Altro (specificare)' in selected_2_9)
+
+# Question 2.10
+st.subheader('2.10 In merito al Responsabile della Gestione Informatica dei Documenti e del Protocollo Informatico il tuo Comune ha nominato:')
+options_2_10 = [
+    'Responsabile della Gestione Informatica dei Documenti e del Protocollo Informatico con funzioni proprie e autonome',
+    'Responsabile della Gestione Informatica dei Documenti e del Protocollo Informatico In condivisione con altri Comuni',
+    'Responsabile della Gestione Informatica dei Documenti e del Protocollo Informatico in fase di nomina',
+    'Altro (specificare)'
+]
+selected_2_10 = radio_button_question('Seleziona un\'opzione:', options_2_10)
+conditional_text_input('Specificare:', 'Altro (specificare)' in selected_2_10)
+
+# Question 2.11
+st.subheader('2.11 In merito al Responsabile della Conservazione interno il tuo Comune ha nominato:')
+options_2_11 = [
+    'Responsabile della Conservazione interno autonomo dalla Gestione Documentale',
+    'Responsabile della Conservazione che svolge anche il ruolo di Responsabile della Gestione Informatica dei Documenti e del Protocollo Informatico',
+    'Responsabile della Conservazione in condivisione con altri Comuni',
+    'Responsabile della Conservazione in fase di nomina',
+    'Altro (specificare)'
+]
+selected_2_11 = radio_button_question('Seleziona un\'opzione:', options_2_11)
+conditional_text_input('Specificare:', 'Altro (specificare)' in selected_2_11)
+
+# Question 2.12
+st.subheader('2.12 In merito al Responsabile della sicurezza informatica il tuo Comune ha nominato:')
+options_2_12 = [
+    'Responsabile della sicurezza informatica (cybersecurity) interno distinto dal Responsabile IT',
+    'Responsabile della sicurezza informatica (cybersecurity) In condivisione con altri Comuni',
+    'Responsabile della sicurezza informatica in fase di nomina',
+    'Altro (specificare)'
+]
+selected_2_12 = radio_button_question('Seleziona un\'opzione:', options_2_12)
+conditional_text_input('Specificare:', 'Altro (specificare)' in selected_2_12)
+
+# Question 2.13
+st.subheader('2.13 In merito alla formazione sulle competenze digitali del personale del tuo Comune indica il livello di supporto necessario per ciascuna delle voci seguenti.')
+
+competencies = ['Utilizzo di software specifici', 'Gestione dei dati digitali', 'Comunicazione su canali digitale', 'Sicurezza informatica', 'Programmazione', 'Utilizzo di piattaforme collaborative', 'Analisi dei dati']
+support_levels = ['Nessun supporto necessario', 'Supporto minimo', 'Supporto moderato', 'Supporto significativo']
+
+for competency in competencies:
+    st.write(competency)
+    likert_scale_question('', support_levels)
+
+# Question 2.14
+st.subheader('2.14 Nell’ambito della formazione ICT che il tuo Comune offre ai dipendenti indica per ciascuna delle voci seguenti se il corso è obbligatorio, opzionale, o non previsto.')
+
+training_topics = ['Corso base (ad esempio strumenti MSFT Office, fogli di calcolo, accesso al cloud ecc.)', 'Corsi gestione dei dati (es. dati aperti)', 'Corsi di gestione di infrastrutture complesse di servizi digitali', 'Corsi su piattaforme specializzate (ad esempio GIS, e-procurement ecc.)', 'Altro (specificare)']
+training_options = ['Obbligatorio', 'Opzionale', 'Non previsto']
+
+for topic in training_topics:
+    st.write(topic)
+    likert_scale_question('', training_options)
 
 # Section 3: Infrastruttura ICT
 st.header('3. Infrastruttura ICT')
