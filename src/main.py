@@ -7,6 +7,9 @@ from section_5 import display_section_5
 from section_6 import display_section_6
 from section_7 import display_section_7
 
+from section_10 import display_section_10
+from section_11 import display_section_11
+
 # Survey Title and Introduction
 st.title('Survey 2024 - Mappa dei Comuni Digitali')
 
@@ -19,7 +22,9 @@ section = st.sidebar.radio("Go to", ["INTRODUZIONE",
                                      "SICUREZZA",
                                      "SERVIZI I (Protocollo, Atti, Segreteria generale, URP)",
                                      "SERVIZI II (Ragioneria, Tributi, Patrimonio)",
-                                     "SERVIZI III (Servizi sociali Servizi scolastici)"
+                                     "SERVIZI III (Servizi sociali Servizi scolastici)",
+                                     "SERVIZI VI (Demografici, Personale, Servizi cimiteriali)",
+                                     "SERVIZI VII (Polizia locale)"
                                      ])
 
 # Display the selected section
@@ -43,6 +48,10 @@ elif section == "SERVIZI II (Ragioneria, Tributi, Patrimonio)":
     display_section_6()
 elif section == "SERVIZI III (Servizi sociali Servizi scolastici)":
     display_section_7()
+elif section == "SERVIZI VI (Demografici, Personale, Servizi cimiteriali)":
+    display_section_10()
+elif section == "SERVIZI VII (Polizia locale)":
+    display_section_11()
 
 # Section 1: Anagrafica (TBD)
 # st.header('1. Anagrafica')
