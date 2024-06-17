@@ -3,7 +3,7 @@ from utils import radio_button_question, multiple_choice_question, number_input_
 
 def display_section_3():
     # Section 3: Infrastruttura ICT
-    st.header('3. Infrastruttura ICT')
+    st.header('INFRASTRUTTURA ICT')
 
     # Question 3.1
     st.subheader('3.1 Allo stato attuale nel tuo Comune sono operativi server fisici per la gestione e l’utilizzo di applicazioni e dati?')

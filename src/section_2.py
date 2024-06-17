@@ -4,7 +4,7 @@ from utils import multiple_choice_question, radio_button_question, number_input_
 def display_section_2():
 
     # Section 2: Organizzazione dell’ente e dei servizi
-    st.header('2. Organizzazione dell’ente e dei servizi')
+    st.header("ORGANIZZAZIONE DELL'ENTE E DEI SERVIZI")
 
     # Question 2.1
     st.subheader('2.1 Tra le categorie riportate di seguito indica in quale rientra il tuo Comune.')

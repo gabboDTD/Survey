@@ -3,7 +3,7 @@ from utils import radio_button_question, multiple_choice_question, conditional_t
 
 def display_section_4():
     # Section 4: Sicurezza
-    st.header('4. Sicurezza')
+    st.header('SICUREZZA')
 
     # Question 4.1
     st.subheader('4.1 Come è gestito il backup dei dati e dei sistemi nel tuo Comune?')
