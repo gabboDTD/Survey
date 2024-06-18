@@ -7,6 +7,7 @@ from section_5 import display_section_5
 from section_6 import display_section_6
 from section_7 import display_section_7
 
+from section_9 import display_section_9
 from section_10 import display_section_10
 from section_11 import display_section_11
 
@@ -23,6 +24,7 @@ section = st.sidebar.radio("Go to", ["INTRODUZIONE",
                                      "SERVIZI I (Protocollo, Atti, Segreteria generale, URP)",
                                      "SERVIZI II (Ragioneria, Tributi, Patrimonio)",
                                      "SERVIZI III (Servizi sociali Servizi scolastici)",
+                                     "SERVIZI V (Territorio, Ambiente, lavoro)",
                                      "SERVIZI VI (Demografici, Personale, Servizi cimiteriali)",
                                      "SERVIZI VII (Polizia locale)"
                                      ])
@@ -48,39 +50,12 @@ elif section == "SERVIZI II (Ragioneria, Tributi, Patrimonio)":
     display_section_6()
 elif section == "SERVIZI III (Servizi sociali Servizi scolastici)":
     display_section_7()
+elif section == "SERVIZI V (Territorio, Ambiente, lavoro)":
+    display_section_9()
 elif section == "SERVIZI VI (Demografici, Personale, Servizi cimiteriali)":
     display_section_10()
 elif section == "SERVIZI VII (Polizia locale)":
     display_section_11()
-
-# Section 1: Anagrafica (TBD)
-# st.header('1. Anagrafica')
-
-# # Display Section 2: Organizzazione
-# display_section_2()
-
-# # Display Section 3: Infrastruttura ICT
-# display_section_3()
-
-# # Display Section 4: Sicurezza
-# display_section_4()
-
-# # Display Section 5: Servizi I (Protocollo, Atti, Segreteria, URP)
-# display_section_5()
-
-# Display Section 6: Servizi II (Ragioneria, Tributi, Patrimonio)
-# display_section_6()
-
-# Section 7: Servizi III (Servizi sociali Servizi scolastici)
-# Section 8: Servizi IV (Sportelli Unici SUAP SUE)
-# Section 9: Servizi V (Territorio Ambiente lavoro)
-# Section 10: Servizi VI (Demografici Personale Servizi cimiteriali)
-# Section 11: Servizi VII (Polizia locale)
-# Section 12: Applicazioni & Dati
-# Section 13: Servizi Digitali
-# Section 14: Atti & Procedimenti Amministrativi
-# Section 15: Governance
-# Section 16: Innovazione
 
 # Submit button
 if st.button('Submit'):
