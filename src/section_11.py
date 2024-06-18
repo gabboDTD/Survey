@@ -1,5 +1,5 @@
 import streamlit as st
-from utils import display_data_and_process_question, display_integration_question2
+from utils import display_data_and_process_question, display_integration_question
 
 def display_section_11():
     # Section 11: Servizi VII (Polizia locale)
@@ -19,7 +19,7 @@ def display_section_11():
     )
 
     # Question 11.2
-    display_integration_question2(
+    display_integration_question(
         question_num='11.2',
         question_text='I servizi o le applicazioni relative alla polizia locale sono integrati con altri servizi dell’amministrazione?',
         key='11_2',

@@ -1,6 +1,7 @@
 import streamlit as st
 from utils import radio_button_question, multiple_choice_question
-from utils import display_data_and_process_question, display_integration_question, display_integration_question2
+from utils import display_data_and_process_question, display_integration_question
+
 
 def display_section_5():
     # Section 5: Servizi I (Protocollo Atti Segreteria generale URP)
@@ -33,6 +34,7 @@ def display_section_5():
             'Atti amministrativi (delibere, determinazioni dirigenziali)'
         ],
         headers=[
+            'Servizi',
             'Protocollo informatico',
             'Gestione documentale (archiviazione fascicolazione conservazione)',
             'Pubblicazioni legali e obbligatorie (albo pretorio trasparenza)',
